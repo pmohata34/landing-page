@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creative Landing Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h1>Welcome Home</h1>
+      <p>This is a vibrant, mobile-first landing experience that scales beautifully across all devices.</p>
+    </section>
+
+    <section id="about">
+      <h1>About Us</h1>
+      <p>We mix creativity and technology to create unforgettable digital experiences for modern audiences.</p>
+    </section>
+
+    <section id="services">
+      <h1>Our Services</h1>
+      <p>Design, development, branding, and beyond — let’s make something amazing together.</p>
+    </section>
+
+    <section id="contact">
+      <h1>Contact Us</h1>
+      <p>Got a project in mind? Let’s talk.</p>
+
+      <form id="contactForm" novalidate aria-describedby="form-message">
+        <div>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required aria-required="true" />
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required aria-required="true" />
+        </div>
+
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Write your message" required aria-required="true"></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+        <div id="form-message" class="message" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Creative Studio. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
