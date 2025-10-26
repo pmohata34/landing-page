@@ -71,86 +71,6 @@ nav a:hover::after,
 nav a:focus::after {
   width: 100%;
 }
-
-/* ================================
-   HERO SECTION
-=================================== */
-.hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  justify-items: center;
-  min-height: 100vh;
-  padding: 120px 40px 60px;
-  background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
-  overflow: hidden;
-}
-
-.hero-content {
-  max-width: 500px;
-  text-align: left;
-}
-
-.hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 0.75rem;
-}
-
-.hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
-}
-
-.hero-content button {
-  background: var(--color-accent);
-  border: none;
-  padding: 0.75rem 1.5rem;
-  font-size: 1.1rem;
-  font-weight: bold;
-  border-radius: 8px;
-  color: #000;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.hero-content button:hover,
-.hero-content button:focus {
-  background: var(--color-success);
-  transform: scale(1.05);
-}
-
-/* ================================
-   HERO ILLUSTRATION (CSS ONLY)
-=================================== */
-.hero-illustration {
-  position: relative;
-  width: 100%;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.blob {
-  width: 260px;
-  height: 260px;
-  background: radial-gradient(circle at 30% 30%, var(--color-accent), transparent 70%);
-  border-radius: 45% 55% 60% 40% / 50% 60% 40% 50%;
-  animation: blobMorph 8s ease-in-out infinite;
-  filter: drop-shadow(0 0 20px rgba(0, 255, 213, 0.5));
-}
-
-@keyframes blobMorph {
-  0%, 100% {
-    border-radius: 45% 55% 60% 40% / 50% 60% 40% 50%;
-    transform: translateY(0);
-  }
-  50% {
-    border-radius: 60% 40% 50% 50% / 40% 60% 50% 50%;
-    transform: translateY(-20px);
-  }
-}
-
 /* ================================
    MAIN CONTENT SECTIONS
 =================================== */
@@ -173,7 +93,7 @@ section.show {
 }
 
 #home {
-  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
 }
 
 #about {
